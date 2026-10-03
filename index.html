@@ -153,6 +153,7 @@
 
   /* ---------- ABOUT ---------- */
   .about-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:60px; align-items:start;}
+  .about-copy-wide p{max-width:680px;}
   .about-copy p{color:var(--ink-soft); font-size:16.5px; margin-bottom:18px; max-width:540px;}
   .about-copy p:last-child{margin-bottom:0;}
   .about-card{
@@ -292,7 +293,7 @@
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="hero-meta-row"><span>Computer Science Student</span><span>Pentesting</span><span>Vulnerability Assessment</span></div>
+        <div class="hero-meta-row"><span>Pentesting</span><span>Vulnerability Assessment</span></div>
         <h1 class="hero-title">Reducing Risk, One Vulnerability at a Time</h1>
         <p class="hero-tagline">Identifying security weaknesses and helping organizations understand and reduce cybersecurity risks — through hands-on penetration testing and vulnerability assessment.</p>
         <div class="hero-ctas">
@@ -315,46 +316,15 @@
   </div>
 </section>
 
-<section id="tools">
-  <div class="wrap">
-    <div class="tools-row">
-      <div class="tools-label">Hands-on with</div>
-      <div class="tools-list">
-        <span>Nmap</span><span>Burp Suite</span><span>Metasploit</span><span>Wireshark</span><span>Nikto</span><span>sqlmap</span>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="about">
   <div class="wrap">
     <div class="eyebrow"><span class="bump"></span>About</div>
-    <h2>A student building practical security skills</h2>
-    <div class="about-grid">
-      <div class="about-copy">
-        <p>I'm Makaryous Hanna, a Computer Science student with a strong interest in cybersecurity, particularly penetration testing and vulnerability assessment.</p>
-        <p>I'm continuously developing my practical skills through cybersecurity training, hands-on labs, CTFs, and practical security exercises.</p>
-        <p>My focus is on understanding how vulnerabilities can be identified and exploited in controlled environments, assessing their potential impact, and learning how systems can be better protected.</p>
-        <p>I approach security challenges with curiosity, problem-solving, and a continuous-learning mindset.</p>
-      </div>
-      <div class="about-card">
-        <div class="about-fact">
-          <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e2451f" stroke-width="1.8"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg></div>
-          <div><div class="k">Field</div><div class="v">Computer Science</div></div>
-        </div>
-        <div class="about-fact">
-          <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e2451f" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
-          <div><div class="k">Interest</div><div class="v">Penetration Testing & Vulnerability Assessment</div></div>
-        </div>
-        <div class="about-fact">
-          <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e2451f" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 006.5 22H20V2H6.5A2.5 2.5 0 004 4.5v15z"/></svg></div>
-          <div><div class="k">Learning through</div><div class="v">Training, labs, CTFs, practical exercises</div></div>
-        </div>
-        <div class="about-fact">
-          <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e2451f" stroke-width="1.8"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
-          <div><div class="k">Mindset</div><div class="v">Curiosity, problem-solving, continuous learning</div></div>
-        </div>
-      </div>
+    <h2>Practical, hands-on security skills</h2>
+    <div class="about-copy about-copy-wide">
+      <p>I'm Makaryous Hanna, with a background in Computer Science and a strong interest in cybersecurity, particularly penetration testing and vulnerability assessment.</p>
+      <p>I'm continuously developing my practical skills through cybersecurity training, hands-on labs, CTFs, and practical security exercises.</p>
+      <p>My focus is on understanding how vulnerabilities can be identified and exploited in controlled environments, assessing their potential impact, and learning how systems can be better protected.</p>
+      <p>I approach security challenges with curiosity, problem-solving, and a continuous-learning mindset.</p>
     </div>
   </div>
 </section>
@@ -369,6 +339,7 @@
         <div>
           <div class="edu-org">Tiba Academy</div>
           <div class="edu-title">Bachelor of Computer Science</div>
+          <div class="edu-track">Expected Graduation: 2027</div>
           <div class="edu-desc">Core academic foundation in computer science, providing the technical grounding for further specialization in cybersecurity.</div>
         </div>
       </div>
@@ -489,7 +460,6 @@
       <div class="project-body">
         <div><div class="pb-label">Challenge</div><div class="pb-text">Assess a LotusCMS-based web application for security weaknesses in a controlled lab environment.</div></div>
         <div><div class="pb-label">Approach</div><div class="pb-text">Performed web enumeration and vulnerability identification, then moved into exploitation fundamentals to understand real-world impact.</div></div>
-        <div><div class="pb-label">Focus</div><div class="pb-text">Web enumeration, vulnerability identification, exploitation fundamentals.</div></div>
         <div><div class="pb-label">Learning outcome</div><div class="pb-text">Built practical understanding of how a single unpatched vulnerability can lead to full compromise.</div></div>
       </div>
     </div>
@@ -505,7 +475,6 @@
       <div class="project-body">
         <div><div class="pb-label">Challenge</div><div class="pb-text">Identify exposed services and vulnerabilities across a deliberately vulnerable network lab.</div></div>
         <div><div class="pb-label">Approach</div><div class="pb-text">Conducted reconnaissance, port scanning, and service enumeration to map the attack surface and assess each service.</div></div>
-        <div><div class="pb-label">Focus</div><div class="pb-text">Network reconnaissance, port scanning, service enumeration, vulnerability assessment.</div></div>
         <div><div class="pb-label">Learning outcome</div><div class="pb-text">Strengthened a repeatable vulnerability assessment methodology, from discovery through documentation.</div></div>
       </div>
     </div>
@@ -521,7 +490,6 @@
       <div class="project-body">
         <div><div class="pb-label">Challenge</div><div class="pb-text">Build a broad, practical foundation across Linux, networking, and web security through structured labs.</div></div>
         <div><div class="pb-label">Approach</div><div class="pb-text">Worked through guided rooms and challenges covering reconnaissance, enumeration, and web application testing fundamentals.</div></div>
-        <div><div class="pb-label">Focus</div><div class="pb-text">Linux, networking, reconnaissance, enumeration, web security, penetration-testing fundamentals.</div></div>
         <div><div class="pb-label">Learning outcome</div><div class="pb-text">Developed consistent habits for approaching unfamiliar systems and translating theory into hands-on practice.</div></div>
       </div>
     </div>
@@ -534,7 +502,7 @@
     <h2>Independent research into application behavior</h2>
     <div class="research-grid">
       <div class="research-copy">
-        <p>Independent security research involving identifying unexpected application behavior, reproducing the issue, documenting its potential security impact, and preparing a responsible vulnerability report.</p>
+        <p>Independent security research into how applications behave — from first observation through to a responsible disclosure report.</p>
         <div class="skill-tags">
           <span>Security Research</span>
           <span>Vulnerability Identification</span>
